@@ -25,6 +25,7 @@ jobs:
       - name: Checkout the sub
         uses: actions/checkout@v3
         with:
+          token: ${{ secrets.GH_ACCESS_TOKEN }}
           repository: An-Li-magicloud/the-sub
           path: the-sub
           
