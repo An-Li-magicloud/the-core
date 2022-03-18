@@ -33,8 +33,6 @@ jobs:
         working-directory: ./the-sub
         run: |
           cp ../the-core/readme.md readme.md
-          git config user.name An-Li-magicloud
-          git config user.email lian@magicloud.io
           git add .
           git commit -m "copy"
           git push
