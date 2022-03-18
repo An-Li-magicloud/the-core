@@ -28,7 +28,7 @@ jobs:
           repository: An-Li-magicloud/the-sub
           path: the-sub
           
-      - name: commit
+      - name: copy and commit
         run: |
           cp the-core/readme.md the-sub/readme.md
           cd the-sub
@@ -36,5 +36,10 @@ jobs:
           git config user.email github-actions@github.com
           git add .
           git commit -m "copy"
-          git push
+      - name: push to sub
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GH_ACCESS_TOKEN }}
+          directory: the-sub
+
         
