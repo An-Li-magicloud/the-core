@@ -29,6 +29,8 @@ jobs:
         run: |
           pwd
           git remote -v
+          git fetch --all
+          git reset --hard origin/master
           date >> readme.md
           git config user.name An-Li-magicloud
           git config user.email lian@magicloud.io
