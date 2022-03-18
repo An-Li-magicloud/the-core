@@ -27,6 +27,7 @@ jobs:
       - name: copy, commit and push
         working-directory: ./the-sub
         run: |
+          pwd
           date >> readme.md
           git config user.name An-Li-magicloud
           git config user.email lian@magicloud.io
