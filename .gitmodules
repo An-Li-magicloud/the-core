@@ -1,0 +1,3 @@
+[submodule "the-sub"]
+	path = the-sub
+	url = git@github.com:An-Li-magicloud/the-sub.git
