@@ -32,7 +32,7 @@ jobs:
         working-directory: ./the-sub
         run: |
           cp ../the-core/readme.md readme.md
-          git remote set-url origin https://${{ secrets.GH_ACCESS_TOKEN }}@github.com/An-Li-magicloud/the-sub.git
+          git remote set-url origin https://x-access-token:${{ secrets.GH_ACCESS_TOKEN }}@github.com/An-Li-magicloud/the-sub.git
           git config user.name An-Li-magicloud
           git config user.email lian@magicloud.io
           git add .
